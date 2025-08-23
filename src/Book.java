@@ -25,4 +25,8 @@ public class Book {
         return this.author;
     }
 
+    @Override
+    public String toString() {
+        return name + " " + author;
+    }
 }

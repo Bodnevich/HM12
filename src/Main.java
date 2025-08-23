@@ -9,5 +9,17 @@ public class Main {
         book.setYearOfPublication(2021);
         System.out.println("Название книги - " + book.getName() + ", год публикации: " + book.getYearOfPublication() + ", автор: " + author.getFirstName() + " " + author.getLastName());
         System.out.println("Название книги - " + book1.getName() + ", год публикации: " + book1.getYearOfPublication() + ", автор: " + author1.getFirstName() + " " + author1.getLastName());
+
+        System.out.println(book);
+        System.out.println(book1);
+
+        System.out.println("book.equals(book1): " + book.equals(book1));
+        System.out.println("author.equals(author1): " + author.equals(author1));
+
+        System.out.println("book.hashCode(): " + book.hashCode());
+        System.out.println("book1.hashCode(): " + book1.hashCode());
+        System.out.println("author.hashCode(): " + author.hashCode());
+        System.out.println("author1.hashCode(): " + author1.hashCode());
+
     }
 }
