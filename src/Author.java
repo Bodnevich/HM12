@@ -25,6 +25,7 @@ public class Author {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) return true;
         Author author = (Author) o;
         return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
     }

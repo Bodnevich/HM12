@@ -29,12 +29,13 @@ public class Book {
 
     @Override
     public String toString() {
-        return name + " " + author;
+        return name + " " + author.toString();
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) return true;
         Book book = (Book) o;
         return yearOfPublication == book.yearOfPublication && Objects.equals(name, book.name) && Objects.equals(author, book.author);
     }
